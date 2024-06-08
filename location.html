@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoRide - Rent your favourite car</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+
+<style>
+
+
+main{
+  margin: 150px 0;
+}
+
+.Address div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+#map {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+</style>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" alt="Ridex logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Partner</a>
+          </li>
+
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Career</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Reference</a>
+          </li>
+
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+   
+  </header>
+
+
+
+
+
+  <main>
+    <div class="container">
+      <div class="row">
+          <h1>LOCATION</h1>
+      </div>
+     
+    
+    </div>
+    <div class="Address" style="display: flex;">
+        <div style="width: 90%; margin: 0 auto;">
+        <h2>Address</h2>
+        <p>62-24 Marlborough Rd <br> Homebush West 2140</p>
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.457653483518!2d151.2062071!3d-33.867385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3c0b365053%3A0xc10540afdad91f7f!2sKent%20Institute%20Australia!5e0!3m2!1sen!2sau!4v1717247114955!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        <div style="width: 90%; margin: 0 auto;">
+            <h2>Address</h2>
+            <p>62-24 Marlborough Rd <br> Homebush West 2140</p>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.457653483518!2d151.2062071!3d-33.867385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3c0b365053%3A0xc10540afdad91f7f!2sKent%20Institute%20Australia!5e0!3m2!1sen!2sau!4v1717247114955!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+    </div>
+
+ 
+  </main>
+
+
+  
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">adip Thapaliya</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

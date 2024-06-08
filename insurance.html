@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoRide - Rent your favourite car</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/insurance.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body style="margin-top: 70px; ;">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" alt="Ridex logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Partner</a>
+          </li>
+
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Career</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Reference</a>
+          </li>
+
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+    <!-- Start Get Quot Area -->
+    <div class="row">
+        <div class="col-75">
+          <div class="container2">
+            <center><h1>Car Insurance Form</h1></center>
+            <form action="submit_phpcrm_form.php" method="POST">
+              <div class="row">
+                <div class="col-50">
+                  <input type="text" id="name" required  name="name" placeholder="Name">  
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-50">
+                      <input type="email" name="email" required placeholder="Email">
+                  </div>
+                  <div class="col-50">
+                     <input type="number" name="phone" required placeholder="Phone">
+                 </div>
+                 </div>
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="text" name="primary_name" required placeholder="Who will be the primary driver of this vehicle?">
+                    </div>     
+               </div>
+      
+              <div class="row">
+                <div class="col-50">
+                  How far is the primary driver's commute one way?<br><br>
+                     <input type="radio" name="commute_one_way" value="Pleasure use only"> Pleasure use only<br><br>
+                     <input type="radio" name="commute_one_way" value="Less than 3 miles"> Less than 3 miles<br><br>
+                     <input type="radio" name="commute_one_way" value="Less than 10 miles"> Less than 10 miles<br><br>
+                     <input type="radio" name="commute_one_way" value="More than 10 miles"> More than 10 miles<br><br>
+                </div>
+                <div class="col-50">
+                   Where do you park your car?<br><br>
+                  <input type="radio" name="where_do_park" value="A private garage"> A private garage<br><br>
+                  <input type="radio" name="where_do_park" value="The driveway"> The driveway<br><br>
+                  <input type="radio" name="where_do_park" value="A quiet residential street"> A quiet residential street<br><br>
+                  <input type="radio" name="where_do_park" value="Other"> Other<br><br>
+                </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-50">
+                      Do you want Comprehensive and Collision coverage for this vehicle?<br><br>
+                      <input type="radio" name="comprehensive_collision" value="Yes"> Yes<br><br>
+                      <input type="radio" name="comprehensive_collision" value="No">  No<br><br>
+                  </div>
+                  <div class="col-50">
+                       Is this vehicle owned, leased, or financed?<br><br>
+                       <input type="radio" name="purchage_type" value="Owned"> Owned<br><br>
+                       <input type="radio" name="purchage_type" value="Leased"> Leased<br><br>
+                      <input type="radio" name="purchage_type" value="Financed"> Financed<br><br>
+                  </div>
+                  </div>  
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="text" name="satae_registered" required  placeholder="In what state is your vehicle registered?">
+                    </div>     
+               </div>
+               <input type="submit" value="SEND" class="btn">
+             </div>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <!-- End Get Quot Area -->
+      
+    
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer " style="margin-top: 70px;">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
+
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">adip Thapaliya</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
